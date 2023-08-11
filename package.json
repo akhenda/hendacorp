@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "gc": "git add . && git cz"
+    "gc": "git add . && git cz",
+    "prepare": "husky install"
   },
   "private": true,
   "devDependencies": {
@@ -12,6 +13,8 @@
     "@commitlint/config-nx-scopes": "17.6.4",
     "@nx/workspace": "16.6.0",
     "cz-git": "1.7.1",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.3",
     "nx": "16.6.0",
     "nx-cloud": "latest"
   },
