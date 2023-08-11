@@ -1,20 +1,23 @@
 const {
   utils: { getProjects },
-} = require('@commitlint/config-nx-scopes');
+} = require("@commitlint/config-nx-scopes");
 
 /** @type {import('cz-git').UserConfig} */
 module.exports = {
-  extends: ['@commitlint/config-conventional', '@commitlint/config-nx-scopes'],
+  extends: ["@commitlint/config-conventional", "@commitlint/config-nx-scopes"],
   rules: {
     // @see: https://commitlint.js.org/#/reference-rules
-    'scope-enum': async (ctx) => [
+    "scope-enum": async (ctx) => [
       2,
-      'always',
+      "always",
       [
-        ...(await getProjects(ctx, ({ tags }) => !tags.includes('stage:end-of-life'))),
-        'version',
-        'release',
-        { value: 'deploy', name: 'deploy:       Deployment commit' },
+        ...(await getProjects(
+          ctx,
+          ({ tags }) => !tags.includes("stage:end-of-life")
+        )),
+        "version",
+        "release",
+        { value: "deploy", name: "deploy:       Deployment commit" },
       ],
     ],
   },
@@ -26,26 +29,68 @@ module.exports = {
       customScope: "Denote the SCOPE of this change:",
       subject: "Write a SHORT, IMPERATIVE tense description of the change:\n",
       body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
-      breaking: 'List any BREAKING CHANGES (optional). Use "|" to break new line:\n',
-      footerPrefixesSelect: "Select the ISSUES type of changeList by this change (optional):",
+      breaking:
+        'List any BREAKING CHANGES (optional). Use "|" to break new line:\n',
+      footerPrefixesSelect:
+        "Select the ISSUES type of changeList by this change (optional):",
       customFooterPrefix: "Input ISSUES prefix:",
       footer: "List any ISSUES by this change. E.g.: #31, #34:\n",
-      generatingByAI: 'Generating your AI commit subject...',
-      generatedSelectByAI: 'Select suitable subject by AI generated:',
-      confirmCommit: "Are you sure you want to proceed with the commit above?"
+      generatingByAI: "Generating your AI commit subject...",
+      generatedSelectByAI: "Select suitable subject by AI generated:",
+      confirmCommit: "Are you sure you want to proceed with the commit above?",
     },
     types: [
-      { value: "feat", name: "feat:     ✨  A new feature", emoji: ":sparkles:" },
+      {
+        value: "feat",
+        name: "feat:     ✨  A new feature",
+        emoji: ":sparkles:",
+      },
       { value: "fix", name: "fix:      🐛  A bug fix", emoji: ":bug:" },
-      { value: "refactor", name: "refactor: ♻️   A code change that neither fixes a bug nor adds a feature", emoji: ":recycle:" },
-      { value: "build", name: "build:    📦️   Changes that affect the build system or external dependencies", emoji: ":package:" },
-      { value: "chore", name: "chore:    🔨  Other changes that don't modify src or test files", emoji: ":hammer:" },
-      { value: "docs", name: "docs:     📝  Documentation only changes", emoji: ":memo:" },
-      { value: "style", name: "style:    💄  Changes that do not affect the meaning of the code", emoji: ":lipstick:" },
-      { value: "perf", name: "perf:     ⚡️  A code change that improves performance", emoji: ":zap:" },
-      { value: "test", name: "test:     ✅  Adding missing tests or correcting existing tests", emoji: ":white_check_mark:" },
-      { value: "ci", name: "ci:       🎡  Changes to our CI configuration files and scripts", emoji: ":ferris_wheel:" },
-      { value: "revert", name: "revert:   ⏪️  Reverts a previous commit", emoji: ":rewind:" }
+      {
+        value: "refactor",
+        name: "refactor: ♻️   A code change that neither fixes a bug nor adds a feature",
+        emoji: ":recycle:",
+      },
+      {
+        value: "build",
+        name: "build:    📦️   Changes that affect the build system or external dependencies",
+        emoji: ":package:",
+      },
+      {
+        value: "chore",
+        name: "chore:    🔨  Other changes that don't modify src or test files",
+        emoji: ":hammer:",
+      },
+      {
+        value: "docs",
+        name: "docs:     📝  Documentation only changes",
+        emoji: ":memo:",
+      },
+      {
+        value: "style",
+        name: "style:    💄  Changes that do not affect the meaning of the code",
+        emoji: ":lipstick:",
+      },
+      {
+        value: "perf",
+        name: "perf:     ⚡️  A code change that improves performance",
+        emoji: ":zap:",
+      },
+      {
+        value: "test",
+        name: "test:     ✅  Adding missing tests or correcting existing tests",
+        emoji: ":white_check_mark:",
+      },
+      {
+        value: "ci",
+        name: "ci:       🎡  Changes to our CI configuration files and scripts",
+        emoji: ":ferris_wheel:",
+      },
+      {
+        value: "revert",
+        name: "revert:   ⏪️  Reverts a previous commit",
+        emoji: ":rewind:",
+      },
     ],
     useEmoji: true,
     // emojiAlign: "right",
@@ -61,11 +106,13 @@ module.exports = {
     emptyScopesAlias: "empty",
     upperCaseSubject: false,
     markBreakingChangeMode: false,
-    allowBreakingChanges: ['feat', 'fix'],
+    allowBreakingChanges: ["feat", "fix"],
     breaklineNumber: 100,
     breaklineChar: "|",
     skipQuestions: [],
-    issuePrefixes: [{ value: "closed", name: "closed:   ISSUES has been processed" }],
+    issuePrefixes: [
+      { value: "closed", name: "closed:   ISSUES has been processed" },
+    ],
     customIssuePrefixAlign: "top",
     emptyIssuePrefixAlias: "skip",
     customIssuePrefixAlias: "custom",
@@ -79,6 +126,8 @@ module.exports = {
     defaultBody: "",
     defaultIssues: "",
     defaultScope: "",
-    defaultSubject: ""
-  }
+    defaultSubject: "",
+    aiQuestionCB: ({ maxSubjectLength, diff }) =>
+      `Write an insightful and concise Git commit message in the present tense for the following Git diff code, without any prefixes, and no longer than ${maxSubjectLength} characters.: \`\`\`diff\n${diff}\n\`\`\``,
+  },
 };
