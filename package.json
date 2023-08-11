@@ -2,12 +2,22 @@
   "name": "@hendacorp/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "gc": "git add . && git cz"
+  },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "17.7.1",
+    "@commitlint/config-conventional": "17.7.0",
+    "@commitlint/config-nx-scopes": "17.6.4",
     "@nx/workspace": "16.6.0",
+    "cz-git": "1.7.1",
     "nx": "16.6.0",
     "nx-cloud": "latest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   }
 }
