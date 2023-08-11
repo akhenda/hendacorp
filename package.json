@@ -16,7 +16,8 @@
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
     "nx": "16.6.0",
-    "nx-cloud": "latest"
+    "nx-cloud": "latest",
+    "prettier": "3.0.1"
   },
   "config": {
     "commitizen": {
