@@ -22,13 +22,15 @@ jobs:
       - name: 📦 PNPM install
         run: pnpm install --frozen-lockfile
 
-      - name: ✅ Run Jest
-        run: pnpm run test:ci
-
       - name: Download code coverage results
         uses: actions/download-artifact@v3
         with:
           name: coverage
+          path: coverage
+
+      - name: Debug
+        run: |
+          ls -a
 
       - name: 📔 Generating coverage badges
         uses: jpb06/jest-badges-action@latest
@@ -36,7 +38,8 @@ jobs:
         with:
           branches: main,dev
           commit-message: 'chore: update coverage badges [skip ci]'
-          output-folder: ./__badges__
+          output-folder: ./.github/badges
+          coverage-summary-path: ./coverage/libs/browserslist-config/coverage-summary.json
 
       - name: 📋 TODO to Issue
         if: ${{ github.ref == 'refs/heads/main' }}

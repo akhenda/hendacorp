@@ -8,8 +8,8 @@ permissions:
   contents: write
 
 jobs:
-  run-linters:
-    name: Run Linters
+  run-nx-cloud:
+    name: Cloud
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,5 +18,29 @@ jobs:
       - name: 📦 Install dependencies
         uses: ./.github/actions/install-deps
 
-      - name: ☁️ NX Cloud Commands
-        uses: ./.github/actions/nx-cloud
+      # - name: ☁️ NX Cloud Commands
+      #   uses: ./.github/actions/nx-cloud
+
+  main:
+    name: 🏗 Nx Cloud - Main Job
+    uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.13.0
+    with:
+      main-branch-name: main
+      number-of-agents: 3
+      init-commands: |
+        pnpm exec nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
+      parallel-commands: |
+        # TODO: enable this when NX supports Prettier v3
+        # pnpm exec nx-cloud record -- pnpm exec nx format:check
+      parallel-commands-on-agents: |
+        pnpm exec nx affected --target=lint --parallel=3
+        pnpm exec nx affected --target=test --parallel=3 --ci --code-coverage
+        pnpm exec nx affected --target=build --parallel=3
+      artifacts-name: coverage
+      artifacts-path: coverage
+
+  agents:
+    name: 🖥 Nx Cloud - Agents
+    uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.13.0
+    with:
+      number-of-agents: 3
