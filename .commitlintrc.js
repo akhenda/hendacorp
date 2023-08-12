@@ -12,7 +12,11 @@ module.exports = {
       'always',
       [
         'deps',
-        ...(await getProjects(ctx, ({ tags }) => !tags.includes('stage:end-of-life'))),
+        ...(await getProjects(ctx, ({ tags }) => {
+          if (!tags) return [];
+
+          return !tags.includes('stage:end-of-life');
+        })),
         'version',
         'release',
         'deploy',

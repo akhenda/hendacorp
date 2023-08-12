@@ -17,7 +17,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@hendacorp/browserslist-config": [
+        "libs/browserslist-config/src/index.ts"
+      ]
+    }
   },
   "exclude": [
     "node_modules",
