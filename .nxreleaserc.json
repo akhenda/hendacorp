@@ -1,0 +1,8 @@
+{
+  "dryRun": true,
+  "changelog": true,
+  "npm": true,
+  "github": true,
+  "repositoryUrl": "https://github.com/akhenda/hendacorp.git",
+  "branches": ["main"]
+}

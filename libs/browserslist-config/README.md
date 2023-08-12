@@ -24,7 +24,7 @@ You can list all supported browsers by running `npx browserslist "last 1 firefox
 Install the module.
 
 ```shell
-$ pnpm add @hendacorp/browserslist-config
+pnpm add @hendacorp/browserslist-config
 ```
 
 ## Usage
