@@ -3,10 +3,15 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "gc": "git add . && git cz",
+    "gc": "git add . && cz",
+    "gc-ai": "git add . && npx czg ai -N=5",
     "prepare": "husky install"
   },
   "private": true,
+  "volta": {
+    "node": "18",
+    "pnpm": "8"
+  },
   "devDependencies": {
     "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",

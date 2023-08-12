@@ -1,0 +1,30 @@
+name: NX Cloud DTE
+description: Leverage DTE using NX Cloud
+inputs:
+  agents:
+    description: 'The number or NX Agents to spawn'
+    required: false
+    default: '3'
+
+runs:
+  using: 'composite'
+
+  steps:
+    - name: 🏗 Nx Cloud - Main Job
+      uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.13.0
+      with:
+        main-branch-name: main
+        number-of-agents: 3
+        init-commands: |
+          pnpm exec nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
+        parallel-commands: |
+          pnpm exec nx-cloud record -- pnpm exec nx format:check
+        parallel-commands-on-agents: |
+          pnpm exec nx affected --target=lint --parallel=3
+          pnpm exec nx affected --target=test --parallel=3 --ci --code-coverage
+          pnpm exec nx affected --target=build --parallel=3
+
+    - name: 🖥 Nx Cloud - Agents
+      uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.13.0
+      with:
+        number-of-agents: ${{ inputs.agents }}

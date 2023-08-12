@@ -1,0 +1,45 @@
+name: Finale
+
+on: workflow_call
+
+jobs:
+  finale:
+    runs-on: ubuntu-latest
+    name: Final Jobs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 🏗 Install PNPM packager
+        uses: pnpm/action-setup@v2
+
+      - name: 🏗 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: 'package.json'
+          cache: 'pnpm'
+
+      - name: 📦 PNPM install
+        run: pnpm install --frozen-lockfile
+
+      - name: ✅ Run Jest
+        run: pnpm run test:ci
+
+      - name: Download code coverage results
+        uses: actions/download-artifact@v3
+        with:
+          name: coverage
+
+      - name: 📔 Generating coverage badges
+        uses: jpb06/jest-badges-action@latest
+        if: github.event_name != 'pull_request'
+        with:
+          branches: main,dev
+          commit-message: 'chore: update coverage badges [skip ci]'
+          output-folder: ./__badges__
+
+      - name: 📋 TODO to Issue
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: alstr/todo-to-issue-action@v4
+        with:
+          AUTO_ASSIGN: true

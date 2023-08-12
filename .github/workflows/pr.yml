@@ -1,0 +1,16 @@
+name: PR
+
+on:
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  ci-repo-integrity:
+    name: Repo Integrity
+    uses: ./.github/workflows/ci-repo-integrity.yml
+
+  ci-nx:
+    name: NX Commands
+    needs: ci-repo-integrity
+    uses: ./.github/workflows/ci-nx.yml

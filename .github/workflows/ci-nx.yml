@@ -1,0 +1,22 @@
+name: NX
+
+on: workflow_call
+
+# Down scope as necessary via https://docs.github.com/en/actions/security-guides/automatic-token-authentication#modifying-the-permissions-for-the-github_token
+permissions:
+  checks: write
+  contents: write
+
+jobs:
+  run-linters:
+    name: Run Linters
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 📦 Install dependencies
+        uses: ./.github/actions/install-deps
+
+      - name: ☁️ NX Cloud Commands
+        uses: ./.github/actions/nx-cloud
