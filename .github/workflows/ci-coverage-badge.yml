@@ -38,7 +38,7 @@ jobs:
           coverage-folder: ./coverage
           coverage-base-folder: ./coverage-base
           gist-token: ${{ secrets.COVERAGE_BADGES_GIST_TOKEN }}
-          # https://gist.github.com/akhenda/e87e6f67fa5b4ffc5757bc946b8db87a
+          # gist-token: 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
           gist-id: e87e6f67fa5b4ffc5757bc946b8db87a
           color: green
           named-logo: jest
