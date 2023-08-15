@@ -10,36 +10,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: 🏗 Install PNPM packager
-        uses: pnpm/action-setup@v2
-
-      - name: 🏗 Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: 'package.json'
-          cache: 'pnpm'
-
-      - name: 📦 PNPM install
-        run: pnpm install --frozen-lockfile
-
       - name: Download code coverage results
         uses: actions/download-artifact@v3
         with:
           name: coverage
           path: coverage
 
-      - name: Debug
-        run: |
-          ls -a
+      - name: Display structure of downloaded files
+        run: ls -R
 
-      - name: 📔 Generating coverage badges
-        uses: jpb06/jest-badges-action@latest
-        if: github.event_name != 'pull_request'
-        with:
-          branches: main,dev
-          commit-message: 'chore: update coverage badges [skip ci]'
-          output-folder: ./.github/badges
-          coverage-summary-path: ./coverage/libs/browserslist-config/coverage-summary.json
+      # - name: 📔 Generating coverage badges
+      #   uses: jpb06/jest-badges-action@latest
+      #   if: github.event_name != 'pull_request'
+      #   with:
+      #     branches: main,dev
+      #     commit-message: 'chore: update coverage badges [skip ci]'
+      #     output-folder: ./.github/badges
+      #     coverage-summary-path: ./coverage/libs/browserslist-config/coverage-summary.json
 
       - name: 📋 TODO to Issue
         if: ${{ github.ref == 'refs/heads/main' }}

@@ -37,7 +37,7 @@ jobs:
         pnpm exec nx affected --target=test --parallel=3 --ci --code-coverage
         pnpm exec nx affected --target=build --parallel=3
       artifacts-name: coverage
-      artifacts-path: coverage
+      artifacts-path: ./coverage/**/coverage-summary.json
 
   agents:
     name: 🖥 Nx Cloud - Agents

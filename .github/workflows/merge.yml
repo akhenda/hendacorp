@@ -16,6 +16,11 @@ jobs:
     needs: ci-repo-integrity
     uses: ./.github/workflows/ci-nx.yml
 
+  ci-coverage-badge:
+    name: Coverage Badge
+    needs: ci-nx
+    uses: ./.github/workflows/ci-coverage-badge.yml
+
   ci-release:
     name: Release
     needs: ci-nx

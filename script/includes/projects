@@ -1,0 +1,11 @@
+#!/bin/bash
+
+declare -A projects
+projects=(
+    ["yourapp"]="apps/yourapp" # put the name - path of your project here
+)
+
+declare -A project_names
+project_names=(
+    ["yourapp"]="yourapp" # put the abbreviation - name of your project here
+)
