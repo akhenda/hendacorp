@@ -16,6 +16,11 @@ jobs:
     needs: ci-repo-integrity
     uses: ./.github/workflows/ci-nx.yml
 
+  ci-coverage-badge:
+    name: Coverage Badge
+    needs: ci-nx
+    uses: ./.github/workflows/ci-coverage-badge.yml
+
   ci-release:
     name: Release
     needs: ci-nx
@@ -25,7 +30,7 @@ jobs:
   # https://stackoverflow.com/a/66358138
   ci-finale:
     name: Finale
-    needs: ci-release
+    needs: [ci-coverage-badge, ci-release]
     if: |
       always()
       && contains(needs.*.result, 'success')

@@ -5,6 +5,7 @@ export function evergreenBrowserslist() {
     'last 1 opera versions',
     'last 1 edge versions',
     'last 1 safari major versions',
+
     // Mobile browsers
     'last 1 chromeandroid versions',
     'last 1 ios major versions',

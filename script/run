@@ -1,0 +1,28 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+
+source includes/projects
+
+print_usage() {
+    echo "💀 $1"
+    echo "Help below 👇"
+    echo ""
+    echo "Runs the given project. Will only work after performing a ./build."
+    echo ""
+    echo "Usage: ./run <project>"
+    ./projects
+    exit 1
+}
+
+if [ -z "$1" ]; then
+    print_usage "Project name is missing!"
+fi
+
+cd ..
+
+# Note that these can't be moved to script/ci
+# Because the environmental variables won't be present
+npx --yes nx build ${project_names[$1]}
+npx --yes prisma migrate deploy             # This is only needed if you have a database
+npx --yes nx serve ${project_names[$1]} --prod
