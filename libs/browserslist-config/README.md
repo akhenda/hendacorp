@@ -1,5 +1,7 @@
 # browserslist-config
 
+![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/akhenda/e87e6f67fa5b4ffc5757bc946b8db87a/raw/41577255440d2cd5f08613f44686f82728d425b4/coverage-libs-browserslist-config.json)
+
 This library was generated with [Nx](https://nx.dev).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](../../LICENSE.md)

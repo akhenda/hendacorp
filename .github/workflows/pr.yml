@@ -19,3 +19,4 @@ jobs:
     name: Coverage Badge
     needs: ci-nx
     uses: ./.github/workflows/ci-coverage-badge.yml
+    secrets: inherit
