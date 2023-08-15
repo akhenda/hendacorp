@@ -15,7 +15,6 @@ jobs:
     needs: ci-repo-integrity
     uses: ./.github/workflows/ci-nx.yml
 
-  # Consider removing cx-nx job if ci-coverage-badge calls it anyway
   ci-coverage-badge:
     name: Coverage Badge
     needs: ci-nx

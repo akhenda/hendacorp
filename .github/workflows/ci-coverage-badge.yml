@@ -7,21 +7,33 @@ jobs:
     name: Code Coverage
     runs-on: ubuntu-latest
     steps:
-      - name: ⤵️ Download Artifact (base code coverage results)
+      - name: ⤵️ Download artifact (base code coverage results)
         if: github.event_name == 'pull_request'
         uses: dawidd6/action-download-artifact@v2
-        id: restoreCodeCoverage
+        id: restored-code-coverage
         with:
           workflow: ci-nx.yaml
           workflow_conclusion: success
           branch: main
           name: coverage
-          path: ./coverage-base
+          path: coverage-base
+          if_no_artifact_found: ignore
         continue-on-error: true
 
-      - name: 📔 Create Coverage Badge
-        uses: dkhunt27/nx-code-coverage@v0.3.0
+      - name: Download code coverage results
+        uses: actions/download-artifact@v3
         with:
+          name: coverage
+          path: coverage
+
+      - name: Display structure of downloaded files
+        run: ls -R
+
+      - name: 📔 Create coverage badge
+        # if: steps.restored-code-coverage.outputs.found_artifact == 'true'
+        uses: dkhunt27/nx-code-coverage@v1
+        with:
+          no-coverage-ran: false
           github-token: ${{ secrets.GITHUB_TOKEN }}
           coverage-folder: ./coverage
           coverage-base-folder: ./coverage-base
@@ -30,12 +42,11 @@ jobs:
           gist-id: e87e6f67fa5b4ffc5757bc946b8db87a
           color: green
           named-logo: jest
-          filename: test
 
       - name: 📔 Generate coverage branch
         uses: team-tenacious/monorepo-coverage@main
         with:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
           COVERAGE_BRANCH: coverage
-          ROOT: './libs'
+          ROOT: './coverage/libs'
           PACKAGES: browserslist-config

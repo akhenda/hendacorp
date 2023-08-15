@@ -30,7 +30,7 @@ jobs:
   # https://stackoverflow.com/a/66358138
   ci-finale:
     name: Finale
-    needs: ci-release
+    needs: [ci-coverage-badge, ci-release]
     if: |
       always()
       && contains(needs.*.result, 'success')

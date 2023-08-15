@@ -1,14 +1,10 @@
 # Issue
 
-<!-- Change the ## to your pull request number -->
-
-![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/akhenda/e87e6f67fa5b4ffc5757bc946b8db87a/raw/hendacorp__pull_##.json)
-
 [FEAT-1234 - Issue Title](https://tracker.example.com/browse/1234)
 
 ## Change Description
 
-Description of the problem and how this PR solves it. Please include a summary of the changes and the related issue. Also include relevant motivation and context. List any dependencies that are required for this change.
+Description of the problem and how this PR solves it. Please include a summary of the changes and the related issue. Also, include relevant motivation and context. List any dependencies that are required for this change.
 
 Fixes # (issue)
 
