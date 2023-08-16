@@ -1,0 +1,16 @@
+{
+  "name": "@hendacorp/prettier-config",
+  "version": "0.0.0-semantic-release",
+  "type": "commonjs",
+  "license": "MIT",
+  "private": false,
+  "description": "Shareable prettier configuration",
+  "author": "J.A.",
+  "main": "index.json",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "@hendacorp:registry": "https://registry.npmjs.org"
+  }
+}

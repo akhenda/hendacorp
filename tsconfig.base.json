@@ -20,6 +20,9 @@
     "paths": {
       "@hendacorp/browserslist-config": [
         "libs/browserslist-config/src/index.ts"
+      ],
+      "@hendacorp/prettier-config": [
+        "libs/prettier-config/src/index.js"
       ]
     }
   },

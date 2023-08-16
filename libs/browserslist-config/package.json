@@ -2,12 +2,16 @@
   "name": "@hendacorp/browserslist-config",
   "version": "1.0.1-rc.4",
   "type": "commonjs",
+  "license": "MIT",
+  "private": false,
+  "description": "Shareable browserslist configuration",
+  "author": "J.A.",
   "main": "./src/index.js",
   "typings": "./src/index.d.ts",
-  "private": false,
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "@hendacorp:registry": "https://registry.npmjs.org"
   },
   "dependencies": {
     "@swc/helpers": "0.5.1"
