@@ -1,6 +1,6 @@
 {
   "name": "@hendacorp/prettier-config",
-  "version": "0.0.0-semantic-release",
+  "version": "1.0.0-rc.1",
   "type": "commonjs",
   "license": "MIT",
   "private": false,
