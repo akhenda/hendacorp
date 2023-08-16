@@ -1,3 +1,10 @@
+# [1.1.0-rc.1](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.0.1-rc.4...browserslist-config-v1.1.0-rc.1) (2023-08-16)
+
+
+### Features
+
+* **prettier-config:** :sparkles: create library ([4b64b68](https://github.com/akhenda/hendacorp/commit/4b64b687d6554f315ca0bc8162b704d08d9b34d9))
+
 ## [1.0.1-rc.4](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.0.1-rc.3...browserslist-config-v1.0.1-rc.4) (2023-08-16)
 
 
