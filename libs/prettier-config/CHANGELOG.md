@@ -1,3 +1,10 @@
+# [1.0.0-rc.2](https://github.com/akhenda/hendacorp/compare/prettier-config-v1.0.0-rc.1...prettier-config-v1.0.0-rc.2) (2023-08-16)
+
+
+### Features
+
+* **typescript-configs:** :sparkles: create library ([f1632a6](https://github.com/akhenda/hendacorp/commit/f1632a6f116da27f227d192be38539c420d88d1b))
+
 # 1.0.0-rc.1 (2023-08-16)
 
 
