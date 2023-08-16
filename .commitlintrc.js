@@ -5,6 +5,7 @@ const {
 /** @type {import('cz-git').UserConfig} */
 module.exports = {
   extends: ['@commitlint/config-conventional', '@commitlint/config-nx-scopes'],
+  ignores: [(message) => /^chore\(release\)/m.test(message)],
   rules: {
     // @see: https://commitlint.js.org/#/reference-rules
     'scope-enum': async (ctx) => [
