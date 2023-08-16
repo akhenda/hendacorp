@@ -1,0 +1,14 @@
+{
+  "name": "@hendacorp/typescript-configs",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "license": "MIT",
+  "private": false,
+  "description": "A set of typescript configuration files that can be extended.",
+  "author": "J.A.",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "@hendacorp:registry": "https://registry.npmjs.org"
+  }
+}
