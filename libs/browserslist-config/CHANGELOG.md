@@ -1,3 +1,10 @@
+## [1.0.1-rc.4](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.0.1-rc.3...browserslist-config-v1.0.1-rc.4) (2023-08-16)
+
+
+### Bug Fixes
+
+* **browserslist-config:** :bug: npm publish config ([62b95ea](https://github.com/akhenda/hendacorp/commit/62b95ea5732923105505ec5fc97c781d87f87b32))
+
 ## [1.0.1-rc.3](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.0.1-rc.2...browserslist-config-v1.0.1-rc.3) (2023-08-16)
 
 
