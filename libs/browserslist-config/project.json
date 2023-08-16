@@ -46,7 +46,9 @@
         "github": true,
         "changelog": true,
         "npm": true,
-        "tagFormat": "browserslist-config-v${VERSION}"
+        "tagFormat": "browserslist-config-v${VERSION}",
+        "outputPath": "dist/libs/browserslist-config",
+        "buildTarget": "build"
       }
     }
   },

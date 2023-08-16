@@ -9,10 +9,6 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akhenda/hendacorp.git"
-  },
   "dependencies": {
     "@swc/helpers": "0.5.1"
   }
