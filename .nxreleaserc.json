@@ -1,5 +1,5 @@
 {
-  "dryRun": true,
+  "dryRun": false,
   "changelog": true,
   "npm": true,
   "github": true,
