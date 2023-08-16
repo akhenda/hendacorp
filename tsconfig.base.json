@@ -10,27 +10,15 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
+    "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@hendacorp/browserslist-config": [
-        "libs/browserslist-config/src/index.ts"
-      ],
-      "@hendacorp/prettier-config": [
-        "libs/prettier-config/index.json"
-      ],
-      "@hendacorp/typescript-configs": [
-        "libs/typescript-configs/src/index.js"
-      ]
+      "@hendacorp/browserslist-config": ["libs/browserslist-config/src/index.ts"],
+      "@hendacorp/prettier-config": ["libs/prettier-config/index.json"],
+      "@hendacorp/typescript-configs": ["libs/typescript-configs/base.json"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }
