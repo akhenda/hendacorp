@@ -1,0 +1,26 @@
+{
+  "name": "@hendacorp/eslint-plugin",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "license": "MIT",
+  "private": false,
+  "description": "J.A's ESLint rules and configs.",
+  "author": "J.A.",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslintplugin",
+    "eslint-config",
+    "eslint-plugin"
+  ],
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "@hendacorp:registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@swc/helpers": "0.5.1"
+  }
+}
