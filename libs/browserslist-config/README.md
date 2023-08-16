@@ -1,10 +1,8 @@
 # browserslist-config
 
-![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/akhenda/e87e6f67fa5b4ffc5757bc946b8db87a/raw/41577255440d2cd5f08613f44686f82728d425b4/coverage-libs-browserslist-config.json)
-
 This library was generated with [Nx](https://nx.dev).
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](../../LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](../../LICENSE.md) [![npm version](https://badge.fury.io/js/%40hendacorp%2Fbrowserslist-config.svg)](https://badge.fury.io/js/%40hendacorp%2Fbrowserslist-config.svg) [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@hendacorp/browserslist-config.svg)](https://img.shields.io/bundlephobia/minzip/@hendacorp/browserslist-config.svg) ![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/akhenda/e87e6f67fa5b4ffc5757bc946b8db87a/raw/41577255440d2cd5f08613f44686f82728d425b4/coverage-libs-browserslist-config.json)
 
 Shareable [browserslist](https://github.com/ai/browserslist) configuration.
 
@@ -26,7 +24,7 @@ You can list all supported browsers by running `npx browserslist "last 1 firefox
 Install the module.
 
 ```shell
-pnpm add @hendacorp/browserslist-config
+pnpm add -D @hendacorp/browserslist-config
 ```
 
 ## Usage
