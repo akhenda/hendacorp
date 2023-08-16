@@ -1,0 +1,34 @@
+{
+  "name": "typescript-configs",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/typescript-configs/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/typescript-configs",
+        "main": "libs/typescript-configs/src/index.js",
+        "tsConfig": "libs/typescript-configs/tsconfig.lib.json",
+        "assets": ["libs/typescript-configs/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs typescript-configs {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "typescript-configs-v${VERSION}",
+        "outputPath": "dist/libs/typescript-configs",
+        "buildTarget": "build"
+      }
+    }
+  },
+  "tags": []
+}
