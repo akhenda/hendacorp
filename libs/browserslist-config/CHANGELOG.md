@@ -1,3 +1,10 @@
+## [1.0.1-rc.2](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.0.1-rc.1...browserslist-config-v1.0.1-rc.2) (2023-08-16)
+
+
+### Bug Fixes
+
+* **browserslist-config:** :bug: trigger semantic-release run ([448fe9b](https://github.com/akhenda/hendacorp/commit/448fe9b00b7412402f33c367e5a0cf9bc85c1ebe))
+
 ## [1.0.1-rc.1](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.0.0...browserslist-config-v1.0.1-rc.1) (2023-08-16)
 
 
