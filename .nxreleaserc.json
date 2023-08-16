@@ -4,5 +4,8 @@
   "npm": true,
   "github": true,
   "repositoryUrl": "https://github.com/akhenda/hendacorp.git",
-  "branches": ["main", { "name": "dev", "channel": "beta", "prerelease": "rc" }]
+  "branches": ["main", { "name": "dev", "channel": "beta", "prerelease": "rc" }],
+  "outputPath": "${WORKSPACE_DIR}/dist",
+  "buildTarget": "build",
+  "commitMessage": "chore(release): v${nextRelease.version} - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric'}) %> [skip ci]\n\n${nextRelease.notes}"
 }
