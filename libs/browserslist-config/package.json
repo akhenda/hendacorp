@@ -1,6 +1,6 @@
 {
   "name": "@hendacorp/browserslist-config",
-  "version": "0.0.0-semantic-release",
+  "version": "1.0.0-rc.1",
   "type": "commonjs",
   "main": "./src/index.js",
   "typings": "./src/index.d.ts",
