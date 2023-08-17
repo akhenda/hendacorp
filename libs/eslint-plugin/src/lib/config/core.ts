@@ -1,5 +1,5 @@
 export default {
-  extends: 'plugin:@shopify/core',
+  extends: ['plugin:@shopify/core'],
   plugins: [],
-  rules: {},
+  settings: {},
 };
