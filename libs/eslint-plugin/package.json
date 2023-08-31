@@ -1,6 +1,6 @@
 {
   "name": "@hendacorp/eslint-plugin",
-  "version": "0.0.1",
+  "version": "1.0.0-rc.1",
   "type": "commonjs",
   "license": "MIT",
   "private": false,
