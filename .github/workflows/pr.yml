@@ -20,3 +20,9 @@ jobs:
     needs: ci-nx
     uses: ./.github/workflows/ci-coverage-badge.yml
     secrets: inherit
+
+  ci-release:
+    name: Release
+    needs: ci-nx
+    uses: ./.github/workflows/ci-release.yml
+    secrets: inherit

@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   // This isn't a best practice - you should only pick out the extends that you
   // care about and typescript/react implies the presence of the esnext, es5 and
   // core configs so specifying them all is not needed.
@@ -12,7 +12,6 @@ export default {
     // Augmenting configs - When extending, these go after the core config
     'plugin:@hendacorp/jest',
     'plugin:@hendacorp/node',
-    'plugin:@hendacorp/polaris',
     'plugin:@hendacorp/react',
     'plugin:@hendacorp/webpack',
 

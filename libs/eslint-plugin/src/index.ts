@@ -1,9 +1,15 @@
 export default {
-  rules: {},
+  rules: {
+    'dollar-sign': {
+      create: function () {
+        // rule implementation ...
+      },
+    },
+  },
 
   configs: {
     // Core configs - When extending, one of these should go first
-    core: require('./lib/config/core'),
+    core: require('./lib/config/core.ts'),
     es5: require('./lib/config/es5'),
     esnext: require('./lib/config/esnext'),
     typescript: require('./lib/config/typescript'),

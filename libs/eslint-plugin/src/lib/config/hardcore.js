@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   extends: [
     'plugin:eslint-comments/recommended',
     // 'plugin:boundaries/recommended',

@@ -1,5 +1,5 @@
-export default {
-  extends: ['plugin:@shopify/react', 'plugin:react/jsx-runtime'],
+module.exports = {
+  extends: ['plugin:@shopify/react', 'plugin:react/jsx-runtime', '@hendacorp'],
   plugins: [],
   settings: {
     react: { version: 'detect' },
