@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   extends: ['plugin:prettier/recommended', 'plugin:@shopify/prettier'],
   plugins: [],
   rules: {

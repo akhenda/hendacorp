@@ -106,7 +106,6 @@ This plugin also provides the following tool-specific configurations, which can 
 ```
 
 - [react](lib/config/react.js): Use this for React projects.
-- [polaris](lib/config/polaris.js): Use this for projects that use [hendacorp’s React Polaris components](https://polaris.hendacorp.com/components).
 - [prettier](lib/config/prettier.js): Use [prettier](https://github.com/prettier/prettier) for consistent formatting. Extending this hendacorp's prettier config will [override](https://github.com/prettier/eslint-plugin-prettier/blob/master/index.js) the default hendacorp eslint rules in favor of prettier formatting. Prettier must be installed within your project, as @hendacorp/eslint-plugin does not provide the dependency itself.
 - [webpack](lib/config/webpack.js): Use this for projects built by [webpack](https://webpack.js.org/).
 

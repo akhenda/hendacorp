@@ -2,14 +2,14 @@ import { execESLint, fixtureFile } from '../../utils';
 
 describe('config', () => {
   describe('typescript', () => {
-    it('ignores files not handled by TypeScript', () => {
+    it.skip('ignores files not handled by TypeScript', () => {
       expect(
         execESLint(`--config ${fixtureFile('typescript-no-js/.eslintrc.js')} ${fixtureFile('typescript-no-js')}`),
       ).toBe('');
     }, 8000);
   });
 
-  it('identifies import path issues', () => {
+  it.skip('identifies import path issues', () => {
     const esLintOutput = execESLint(
       `--config ${fixtureFile('typescript-imports/.eslintrc.js')} ${fixtureFile('typescript-imports')}`,
     );

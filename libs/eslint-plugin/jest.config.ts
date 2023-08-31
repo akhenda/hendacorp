@@ -22,7 +22,9 @@ export default {
   transform: {
     '^.+\\.[tj]s$': ['@swc/jest', swcJestConfig],
   },
-  moduleFileExtensions: ['ts', 'js', 'html'],
+  moduleFileExtensions: ['ts', 'js', 'html', 'tsx', 'json'],
   testEnvironment: 'node',
   coverageDirectory: '../../coverage/libs/eslint-plugin',
+  // modulePathIgnorePatterns: ['./tests/fixtures/'],
+  testPathIgnorePatterns: ['.*/tests/fixtures/'],
 };

@@ -9,7 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/eslint-plugin",
-        "main": "libs/eslint-plugin/src/index.ts",
+        "main": "libs/eslint-plugin/src/index.js",
         "tsConfig": "libs/eslint-plugin/tsconfig.lib.json",
         "assets": ["libs/eslint-plugin/*.md"]
       }

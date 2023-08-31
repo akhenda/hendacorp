@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   extends: ['plugin:@typescript-eslint/recommended', 'plugin:@shopify/typescript', 'plugin:@hendacorp/esnext'],
   plugins: [],
   rules: {},
