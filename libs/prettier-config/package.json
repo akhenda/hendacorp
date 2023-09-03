@@ -3,7 +3,6 @@
   "version": "1.0.0-rc.2",
   "type": "commonjs",
   "license": "MIT",
-  "private": false,
   "description": "Shareable prettier configuration",
   "author": "J.A.",
   "main": "index.json",

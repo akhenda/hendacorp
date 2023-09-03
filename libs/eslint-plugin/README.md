@@ -109,6 +109,13 @@ This plugin also provides the following tool-specific configurations, which can 
 - [prettier](lib/config/prettier.js): Use [prettier](https://github.com/prettier/prettier) for consistent formatting. Extending this hendacorp's prettier config will [override](https://github.com/prettier/eslint-plugin-prettier/blob/master/index.js) the default hendacorp eslint rules in favor of prettier formatting. Prettier must be installed within your project, as @hendacorp/eslint-plugin does not provide the dependency itself.
 - [webpack](lib/config/webpack.js): Use this for projects built by [webpack](https://webpack.js.org/).
 
+I have also included some config recipes I personally use:
+
+- [basic](lib/config/recipes/basic.js): Use this for casual js/typescript projects.
+- [nodest](lib/config/recipes/nodest.js): Use this for casual Node.js projects.
+- [reactful](lib/config/recipes/reactful.js): Use this for casual React.js projects.
+- [react-native](lib/config/recipes/native.js): Use this for casual React Native or Expo projects.
+
 ### node
 
 If you are working on a node module, we also provide the [node configuration](lib/config/node.js) for you. Note that this configuration needs to be used in conjunction with one of the core configurations (either `es5` or `esnext`). If you plan to transpile your code using Babel, use the `esnext` config. If you do not plan to do so, the config you choose depends on the version of node you wish to support, and how many ESNext features are natively available in that version. You can see a detailed list of what version of node supports what new JavaScript features by visiting <http://node.green>.
