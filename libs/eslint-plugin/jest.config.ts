@@ -27,4 +27,5 @@ export default {
   coverageDirectory: '../../coverage/libs/eslint-plugin',
   // modulePathIgnorePatterns: ['./tests/fixtures/'],
   testPathIgnorePatterns: ['.*/tests/fixtures/'],
+  verbose: true,
 };
