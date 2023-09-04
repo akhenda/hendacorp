@@ -13,7 +13,7 @@ runs:
 
   steps:
     - name: 🗃️ Verify changed files
-      uses: tj-actions/changed-files@v37
+      uses: tj-actions/changed-files@v39
       id: changed-files
       with:
         files: |
