@@ -1,3 +1,10 @@
+# [1.0.0-rc.4](https://github.com/akhenda/hendacorp/compare/prettier-config-v1.0.0-rc.3...prettier-config-v1.0.0-rc.4) (2023-09-06)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([6e85272](https://github.com/akhenda/hendacorp/commit/6e852728c0739bb42bc775458c0a44ececc4e8da))
+
 # [1.0.0-rc.3](https://github.com/akhenda/hendacorp/compare/prettier-config-v1.0.0-rc.2...prettier-config-v1.0.0-rc.3) (2023-09-06)
 
 
