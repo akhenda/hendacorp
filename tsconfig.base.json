@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@hendacorp/browserslist-config": ["libs/browserslist-config/src/index.ts"],
-      "@hendacorp/eslint-plugin-0": ["libs/eslint-plugin/index.js"],
+      "@hendacorp/eslint-plugin": ["libs/eslint-plugin/src/index.js"],
       "@hendacorp/prettier-config": ["libs/prettier-config/index.json"],
       "@hendacorp/typescript-configs": ["libs/typescript-configs/base.json"]
     }
