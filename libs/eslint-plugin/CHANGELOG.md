@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.0...eslint-plugin-v1.0.1) (2023-09-06)
+
+
+### Bug Fixes
+
+* **deps:** :bug: cannot install ([56faba5](https://github.com/akhenda/hendacorp/commit/56faba59104eae859b919f4e73235d91a0580d48))
+
 # 1.0.0 (2023-09-06)
 
 
