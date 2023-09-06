@@ -38,6 +38,7 @@
     "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
     "@commitlint/config-nx-scopes": "17.6.4",
+    "@hendacorp/eslint-plugin": "workspace:*",
     "@nx/eslint-plugin": "16.8.0",
     "@nx/jest": "16.8.0",
     "@nx/js": "16.8.0",
