@@ -3,6 +3,7 @@
   "version": "1.0.0-rc.1",
   "type": "commonjs",
   "license": "MIT",
+  "private": false,
   "description": "J.A's ESLint rules and configs.",
   "author": "J.A.",
   "keywords": [

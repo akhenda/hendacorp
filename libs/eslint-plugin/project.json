@@ -22,7 +22,7 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/eslint-plugin/**/*.js", "libs/eslint-plugin/package.json"]
+        "lintFilePatterns": ["libs/eslint-plugin/**/*.js"]
       }
     },
     "test": {
