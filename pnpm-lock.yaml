@@ -238,7 +238,7 @@ importers:
         specifier: '>=2.8'
         version: 3.0.3
       tslib:
-        specifier: ^2.3.0
+        specifier: 2.6.2
         version: 2.6.2
 
   libs/prettier-config: {}
