@@ -1,3 +1,12 @@
+# [1.0.0-rc.2](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.0-rc.1...eslint-plugin-v1.0.0-rc.2) (2023-09-06)
+
+
+### Bug Fixes
+
+* **eslint-plugin:** :bug: build failing ([efd8c07](https://github.com/akhenda/hendacorp/commit/efd8c07ac7b3f49859665e7af4bb8e5d8aa46f82))
+* **eslint-plugin:** :bug: disable @nx/dependency-checks ([09dc9e3](https://github.com/akhenda/hendacorp/commit/09dc9e3a0937ac3f17ad39e373bf81cbaff5679a))
+* **eslint-plugin:** :bug: tests config ([7e123a2](https://github.com/akhenda/hendacorp/commit/7e123a2cc4db474dc6d9091132b322a7462a81d7))
+
 # 1.0.0-rc.1 (2023-08-31)
 
 
