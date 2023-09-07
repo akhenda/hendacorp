@@ -1,6 +1,6 @@
 {
   "name": "@hendacorp/typescript-configs",
-  "version": "1.0.1",
+  "version": "1.0.2-rc.1",
   "type": "commonjs",
   "license": "MIT",
   "description": "A set of typescript configuration files that can be extended.",
