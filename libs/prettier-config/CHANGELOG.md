@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/akhenda/hendacorp/compare/prettier-config-v1.0.1...prettier-config-v1.0.2) (2023-09-07)
+
+
+### Bug Fixes
+
+* :bug: update assets in `prettier-config` and `typescript-configs` project.json files ([36393f8](https://github.com/akhenda/hendacorp/commit/36393f8c530093a71e772f871d603da56b50f012))
+
 ## [1.0.2-rc.1](https://github.com/akhenda/hendacorp/compare/prettier-config-v1.0.1...prettier-config-v1.0.2-rc.1) (2023-09-07)
 
 
