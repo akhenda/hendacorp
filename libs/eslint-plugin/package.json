@@ -40,7 +40,7 @@
     }
   },
   "dependencies": {
-    "@swc/helpers": "0.5.1",
+    "@swc/helpers": "0.5.2",
     "eslint": "8.48.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-array-func": "3.1.8",
