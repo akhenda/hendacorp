@@ -11,7 +11,15 @@
         "outputPath": "dist/libs/typescript-configs",
         "main": "libs/typescript-configs/src/index.js",
         "tsConfig": "libs/typescript-configs/tsconfig.lib.json",
-        "assets": ["libs/typescript-configs/*.md"]
+        "assets": [
+          "libs/typescript-configs/*.md",
+          "libs/typescript-configs/application.json",
+          "libs/typescript-configs/base.json",
+          "libs/typescript-configs/dom.json",
+          "libs/typescript-configs/library.json",
+          "libs/typescript-configs/node-base.json",
+          "libs/typescript-configs/node-library.json"
+        ]
       }
     },
     "publish": {
