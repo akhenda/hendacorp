@@ -11,7 +11,7 @@ runs:
 
   steps:
     - name: 🏗 Nx Cloud - Main Job
-      uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.13.1
+      uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.13.0
       with:
         main-branch-name: main
         number-of-agents: 3
@@ -25,6 +25,6 @@ runs:
           pnpm exec nx affected --target=build --parallel=3
 
     - name: 🖥 Nx Cloud - Agents
-      uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.13.1
+      uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.13.0
       with:
         number-of-agents: ${{ inputs.agents }}
