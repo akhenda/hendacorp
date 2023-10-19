@@ -1,7 +1,10 @@
 module.exports = {
   extends: ['plugin:@typescript-eslint/recommended', 'plugin:@shopify/typescript', 'plugin:@hendacorp/esnext'],
   plugins: [],
-  rules: {},
+  rules: {
+    '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
+    'no-undef': 'off',
+  },
 
   overrides: [
     {
@@ -13,7 +16,18 @@ module.exports = {
     {
       parser: '@typescript-eslint/parser',
       files: ['*.ts', '*.tsx'],
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
+        // 'import/resolver': {
+        //   typescript: {},
+        // },
+      },
       rules: {
+        // turn on errors for missing imports
+        'import/no-unresolved': 'error',
+
         '@typescript-eslint/ban-types': [
           'error',
           {

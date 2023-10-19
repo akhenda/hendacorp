@@ -13,12 +13,12 @@
         "tsConfig": "libs/typescript-configs/tsconfig.lib.json",
         "assets": [
           "libs/typescript-configs/*.md",
-          "libs/typescript-configs/application.json",
+          "libs/typescript-configs/app.json",
           "libs/typescript-configs/base.json",
           "libs/typescript-configs/dom.json",
           "libs/typescript-configs/library.json",
-          "libs/typescript-configs/node-base.json",
-          "libs/typescript-configs/node-library.json"
+          "libs/typescript-configs/node.base.json",
+          "libs/typescript-configs/node.library.json"
         ]
       }
     },

@@ -8,13 +8,13 @@ module.exports = {
   env: { browser: true },
   plugins: ['@hendacorp'],
   overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      parserOptions: {
-        project: 'tsconfig.json',
-        tsconfigRootDir: __dirname,
-      },
-    },
+    // {
+    //   files: ['*.ts', '*.tsx'],
+    //   parserOptions: {
+    //     project: 'tsconfig.json',
+    //     tsconfigRootDir: __dirname,
+    //   },
+    // },
     {
       env: { jest: true },
       extends: ['plugin:@hendacorp/jest-dom', 'plugin:@hendacorp/cypress'],
