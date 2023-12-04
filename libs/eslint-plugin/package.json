@@ -40,7 +40,7 @@
     }
   },
   "dependencies": {
-    "@shopify/eslint-plugin": "43.0.0",
+    "@shopify/eslint-plugin": "44.0.0",
     "@swc/helpers": "0.5.3",
     "@typescript-eslint/eslint-plugin": "6.8.0",
     "@typescript-eslint/parser": "6.8.0",
