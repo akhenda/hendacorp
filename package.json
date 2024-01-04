@@ -35,9 +35,9 @@
     "nx:reset": "pnpm exec nx reset"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.8.0",
-    "@commitlint/config-conventional": "17.8.0",
-    "@commitlint/config-nx-scopes": "17.6.4",
+    "@commitlint/cli": "18.4.4",
+    "@commitlint/config-conventional": "18.4.4",
+    "@commitlint/config-nx-scopes": "18.4.4",
     "@hendacorp/eslint-plugin": "workspace:*",
     "@nx/eslint-plugin": "16.10.0",
     "@nx/jest": "16.10.0",
