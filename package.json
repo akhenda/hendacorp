@@ -4,8 +4,8 @@
   "license": "MIT",
   "private": true,
   "volta": {
-    "node": "20",
-    "pnpm": "9"
+    "node": "20.16.0",
+    "pnpm": "9.7.0"
   },
   "repository": {
     "type": "git",
