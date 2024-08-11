@@ -711,3 +711,6 @@ Thumbs.db
 
 *.orig
 /coverage-base
+
+.nx/cache
+.nx/workspace-data

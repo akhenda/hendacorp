@@ -3,6 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/browserslist-config/src",
   "projectType": "library",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/js:swc",
@@ -19,25 +20,14 @@
       "dependsOn": ["build"]
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["libs/browserslist-config/**/*.ts", "libs/browserslist-config/package.json"]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "libs/browserslist-config/jest.config.ts",
-        "passWithNoTests": true,
         "coverageReporters": ["json-summary", "text", "lcov", "json", "html", "text-summary"]
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
       }
     },
     "semantic-release": {
@@ -51,6 +41,5 @@
         "buildTarget": "build"
       }
     }
-  },
-  "tags": []
+  }
 }
