@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.2...eslint-plugin-v1.0.3) (2024-08-11)
+
+### Bug Fixes
+
+- **deps:** :bug: update ([b388569](https://github.com/akhenda/hendacorp/commit/b388569623327a82071a7d3ddf06702319b9c1f6))
+- **eslint-plugin:** configs ([5c10815](https://github.com/akhenda/hendacorp/commit/5c10815118f3e812d4fc03dfea3d42c504edcbdb))
+
 ## [1.0.3-rc.1](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.2...eslint-plugin-v1.0.3-rc.1) (2024-08-11)
 
 ### Bug Fixes
