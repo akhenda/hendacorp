@@ -1,3 +1,9 @@
+## [1.1.3](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.1.2...browserslist-config-v1.1.3) (2024-08-11)
+
+### Bug Fixes
+
+- **deps:** :bug: update ([b388569](https://github.com/akhenda/hendacorp/commit/b388569623327a82071a7d3ddf06702319b9c1f6))
+
 ## [1.1.3-rc.1](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.1.2...browserslist-config-v1.1.3-rc.1) (2024-08-11)
 
 ### Bug Fixes
