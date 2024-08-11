@@ -28,7 +28,8 @@ module.exports = {
     basic: require('./lib/config/recipes/basic'),
     nodest: require('./lib/config/recipes/nodest'),
     reactful: require('./lib/config/recipes/reactful'),
-    'react-native': require('./lib/config/recipes/native'),
+    next: require('./lib/config/recipes/reactful'),
+    native: require('./lib/config/recipes/native'),
 
     // Prettier config - When extending, this must go last
     prettier: require('./lib/config/prettier'),
