@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:security/recommended', 'plugin:@shopify/node', 'plugin:n/recommended'],
+  extends: ['plugin:security/recommended-legacy', 'plugin:@shopify/node', 'plugin:n/recommended'],
   env: {
     node: true,
   },

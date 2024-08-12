@@ -24,7 +24,7 @@
     "preinstall": "npx only-allow pnpm",
     "gc": "git add . && cz",
     "gc-ai": "git add . && npx czg ai -N=5",
-    "prepare": "husky install",
+    "prepare": "husky",
     "help": "nx help",
     "affected": "nx affected",
     "affected:apps": "nx affected:apps",

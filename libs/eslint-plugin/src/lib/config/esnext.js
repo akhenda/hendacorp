@@ -15,10 +15,10 @@ module.exports = {
     requireConfigFile: false,
   },
   plugins: [
-    '@babel/eslint-plugin',
-    'promise',
-    'sort-class-members',
-    'import',
+    '@babel/eslint-plugin', // already imported by Shopify plugin
+    'promise', // already imported by Shopify plugin
+    'sort-class-members', // already imported by Shopify plugin
+    'import', // already imported by Shopify plugin
     'simple-import-sort',
     'lodash',
     'deprecate',
