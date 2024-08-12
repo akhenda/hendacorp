@@ -1,3 +1,9 @@
+## [1.0.5-rc.1](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.4...eslint-plugin-v1.0.5-rc.1) (2024-08-12)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-plugin-cypress to v3.5.0 ([b2f7be6](https://github.com/akhenda/hendacorp/commit/b2f7be6119d2621abf5a6b2576ec9b798b9f91cd))
+
 ## [1.0.4](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.3...eslint-plugin-v1.0.4) (2024-08-12)
 
 ### Bug Fixes
