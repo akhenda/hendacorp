@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.4...eslint-plugin-v1.0.5) (2024-08-12)
+
+### Bug Fixes
+
+- disable promise plugin ([fce4e7a](https://github.com/akhenda/hendacorp/commit/fce4e7a3f7e6eff46e81440859027856f62d1fb8))
+
 ## [1.0.4](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.3...eslint-plugin-v1.0.4) (2024-08-12)
 
 ### Bug Fixes
