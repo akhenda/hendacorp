@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.1.3...browserslist-config-v1.1.4) (2024-08-12)
+
+### Bug Fixes
+
+- **eslint-plugin:** deps update ([868381f](https://github.com/akhenda/hendacorp/commit/868381f5612655ca6fe6fd61a8b54a7b0e2a86ca))
+- **eslint-plugin:** update deps ([c1bbc79](https://github.com/akhenda/hendacorp/commit/c1bbc79b14b19fb400324eb850889f77b585b13c))
+
 ## [1.1.4-rc.1](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.1.3...browserslist-config-v1.1.4-rc.1) (2024-08-12)
 
 ### Bug Fixes
