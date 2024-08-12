@@ -16,7 +16,7 @@ module.exports = {
   },
   plugins: [
     '@babel/eslint-plugin', // already imported by Shopify plugin
-    'promise', // already imported by Shopify plugin
+    // 'promise', // already imported by Shopify plugin
     'sort-class-members', // already imported by Shopify plugin
     'import', // already imported by Shopify plugin
     'simple-import-sort',
