@@ -1,3 +1,9 @@
+## [1.0.6-rc.2](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.6-rc.1...eslint-plugin-v1.0.6-rc.2) (2024-08-16)
+
+### Bug Fixes
+
+- **eslint-plugin:** add next.js recipe ([493e840](https://github.com/akhenda/hendacorp/commit/493e840d84f42929df3d6d03db199a7887c3ef40))
+
 ## [1.0.6-rc.1](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.5...eslint-plugin-v1.0.6-rc.1) (2024-08-16)
 
 ### Bug Fixes
