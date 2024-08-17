@@ -52,8 +52,8 @@ importers:
         specifier: 0.2.36
         version: 0.2.36(@swc/core@1.7.11(@swc/helpers@0.5.12))
       '@theunderscorer/nx-semantic-release':
-        specifier: 2.11.0
-        version: 2.11.0(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))(typescript@5.5.4)
+        specifier: 2.12.0
+        version: 2.12.0(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))(typescript@5.5.4)
       '@types/jest':
         specifier: 29.5.12
         version: 29.5.12
@@ -1236,12 +1236,6 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@nrwl/devkit@17.2.7':
-    resolution: {integrity: sha512-TISLlIH3xSWre2NLg0aMUBmTvMus+xUicaMeg8DWvwSXJJIMC5QFlB1hjw0VkyLsSraHpd5PWtyDqldHWRfKUQ==}
-
-  '@nrwl/devkit@17.3.2':
-    resolution: {integrity: sha512-31wh7dDZPM1YUCfhhk/ioHnUeoPIlKYLFLW0fGdw76Ow2nmTqrmxha2m0CSIR1/9En9GpYut2IdUdNh9CctNlA==}
-
   '@nrwl/devkit@19.6.0':
     resolution: {integrity: sha512-WKvuShei1dmjUhbY1J62vkNhvIkcFIc4MPo0YnYzuBbxvNKWB6r3ICRc1BZuFYL3L7pPIEHUcdExyTdIZRDVqQ==}
 
@@ -1260,16 +1254,6 @@ packages:
 
   '@nrwl/workspace@19.6.0':
     resolution: {integrity: sha512-6s2oQUrU7rRAzZ8bDFSx84Sy9wYwlIdSkYZQqalPaBIJcJbySSMBKUREqvKedy7m8rixqCd3zYnzylwOMIlg/w==}
-
-  '@nx/devkit@17.2.7':
-    resolution: {integrity: sha512-RyJyFO5PkNhMrebpv93Bci6pRkrw6guyfX7Esl/5+O6UfN0ytnmaRIrbiVwftTQ6m/T08OWrJQHZMuByP0WWHQ==}
-    peerDependencies:
-      nx: '>= 16 <= 18'
-
-  '@nx/devkit@17.3.2':
-    resolution: {integrity: sha512-gbOIhwrZKCSSFFbh6nE6LLCvAU7mhSdBSnRiS14YBwJJMu4CRJ0IcaFz58iXqGWZefMivKtkNFtx+zqwUC4ziw==}
-    peerDependencies:
-      nx: '>= 16 <= 18'
 
   '@nx/devkit@19.6.0':
     resolution: {integrity: sha512-sFDnP+KkR6m5VRi3ThS4Aymfo7squ48Qhkvpwkj3Y0W4q577+QrXlAS4tR9GZM0FAgQeF63kdZ1cLy39ZlGaWA==}
@@ -1606,8 +1590,8 @@ packages:
     resolution: {integrity: sha512-4BAffykYOgO+5nzBWYwE3W90sBgLJoUPRWWcL8wlyiM8IB8ipJz3UMJ9KXQd1RKQXpKp8Tutn80HZtWsu2u76w==}
     engines: {node: '>=10'}
 
-  '@theunderscorer/nx-semantic-release@2.11.0':
-    resolution: {integrity: sha512-pUyRdSSaNHexXdO2xfAS7xFlwnE9XoUd7q17uzh4dkc+VLSHs2Cw6cqUttiUs8N5uVV0tOCtpfxMqSQ9ho8vbw==}
+  '@theunderscorer/nx-semantic-release@2.12.0':
+    resolution: {integrity: sha512-LsYQp14oCO8Bi/Qlj+HOvsn7oQRn8t3y3yQeQdW+RKI2SsCzy0cp1tfbS94oikn7bLl606cwpjmDh7CM4Hnhbg==}
     engines: {node: '>=16.0.0'}
 
   '@tokenizer/token@0.3.0':
@@ -2826,11 +2810,6 @@ packages:
 
   ejs@3.1.10:
     resolution: {integrity: sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==}
-    engines: {node: '>=0.10.0'}
-    hasBin: true
-
-  ejs@3.1.9:
-    resolution: {integrity: sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==}
     engines: {node: '>=0.10.0'}
     hasBin: true
 
@@ -5739,11 +5718,6 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  semver@7.5.3:
-    resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   semver@7.6.3:
     resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
     engines: {node: '>=10'}
@@ -8037,18 +8011,6 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@nrwl/devkit@17.2.7(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))':
-    dependencies:
-      '@nx/devkit': 17.2.7(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))
-    transitivePeerDependencies:
-      - nx
-
-  '@nrwl/devkit@17.3.2(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))':
-    dependencies:
-      '@nx/devkit': 17.3.2(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))
-    transitivePeerDependencies:
-      - nx
-
   '@nrwl/devkit@19.6.0(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))':
     dependencies:
       '@nx/devkit': 19.6.0(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))
@@ -8137,29 +8099,6 @@ snapshots:
       - '@swc-node/register'
       - '@swc/core'
       - debug
-
-  '@nx/devkit@17.2.7(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))':
-    dependencies:
-      '@nrwl/devkit': 17.2.7(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))
-      ejs: 3.1.10
-      enquirer: 2.3.6
-      ignore: 5.3.1
-      nx: 19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12))
-      semver: 7.5.3
-      tmp: 0.2.1
-      tslib: 2.6.3
-
-  '@nx/devkit@17.3.2(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))':
-    dependencies:
-      '@nrwl/devkit': 17.3.2(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))
-      ejs: 3.1.9
-      enquirer: 2.3.6
-      ignore: 5.3.1
-      nx: 19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12))
-      semver: 7.6.3
-      tmp: 0.2.1
-      tslib: 2.6.3
-      yargs-parser: 21.1.1
 
   '@nx/devkit@19.6.0(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))':
     dependencies:
@@ -8731,10 +8670,10 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@theunderscorer/nx-semantic-release@2.11.0(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))(typescript@5.5.4)':
+  '@theunderscorer/nx-semantic-release@2.12.0(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))(typescript@5.5.4)':
     dependencies:
-      '@nrwl/devkit': 17.2.7(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))
-      '@nx/devkit': 17.3.2(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))
+      '@nrwl/devkit': 19.6.0(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))
+      '@nx/devkit': 19.6.0(nx@19.6.0(@swc/core@1.7.11(@swc/helpers@0.5.12)))
       '@semantic-release/changelog': 6.0.3(semantic-release@20.1.0(typescript@5.5.4))
       '@semantic-release/exec': 6.0.3(semantic-release@20.1.0(typescript@5.5.4))
       '@semantic-release/git': 10.0.1(semantic-release@20.1.0(typescript@5.5.4))
@@ -10222,10 +10161,6 @@ snapshots:
   ee-first@1.1.1: {}
 
   ejs@3.1.10:
-    dependencies:
-      jake: 10.8.7
-
-  ejs@3.1.9:
     dependencies:
       jake: 10.8.7
 
@@ -13685,10 +13620,6 @@ snapshots:
   semver@5.7.2: {}
 
   semver@6.3.1: {}
-
-  semver@7.5.3:
-    dependencies:
-      lru-cache: 6.0.0
 
   semver@7.6.3: {}
 
