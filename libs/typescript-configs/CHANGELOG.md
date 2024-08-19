@@ -4,6 +4,12 @@
 
 - **deps:** update dependency eslint-plugin-cypress to v3.5.0 ([bfa756e](https://github.com/akhenda/hendacorp/commit/bfa756e604a47f0e0a5cba9bbbcac4cb309a38bc))
 
+## [1.0.6-rc.1](https://github.com/akhenda/hendacorp/compare/typescript-configs-v1.0.5...typescript-configs-v1.0.6-rc.1) (2024-08-19)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-plugin-cypress to v3.5.0 ([bfa756e](https://github.com/akhenda/hendacorp/commit/bfa756e604a47f0e0a5cba9bbbcac4cb309a38bc))
+
 ## [1.0.6-rc.1](https://github.com/akhenda/hendacorp/compare/typescript-configs-v1.0.5...typescript-configs-v1.0.6-rc.1) (2024-08-17)
 
 ### Bug Fixes
