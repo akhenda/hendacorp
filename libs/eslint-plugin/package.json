@@ -81,6 +81,6 @@
     "eslint-plugin-unicorn": "55.0.0",
     "eslint-plugin-unused-imports": "3.2.0",
     "eslint-plugin-write-good-comments": "0.2.0",
-    "tslib": "2.6.3"
+    "tslib": "2.7.0"
   }
 }
