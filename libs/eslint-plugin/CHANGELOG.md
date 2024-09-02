@@ -1,3 +1,9 @@
+## [1.0.6-rc.5](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.6-rc.4...eslint-plugin-v1.0.6-rc.5) (2024-09-02)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-plugin-no-unsanitized to v4.1.0 ([d86e178](https://github.com/akhenda/hendacorp/commit/d86e178be0906146be0e5a786c025cd62e010fc3))
+
 ## [1.0.6-rc.4](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.6-rc.3...eslint-plugin-v1.0.6-rc.4) (2024-09-02)
 
 ### Bug Fixes
