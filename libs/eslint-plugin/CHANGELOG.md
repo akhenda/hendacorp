@@ -1,3 +1,9 @@
+## [1.0.6-rc.4](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.6-rc.3...eslint-plugin-v1.0.6-rc.4) (2024-09-02)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-plugin-jest to v28.8.2 ([f8e8f19](https://github.com/akhenda/hendacorp/commit/f8e8f19b7f406eb4aba720c1dbf720e740015846))
+
 ## [1.0.6-rc.3](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.6-rc.2...eslint-plugin-v1.0.6-rc.3) (2024-08-30)
 
 ### Bug Fixes
