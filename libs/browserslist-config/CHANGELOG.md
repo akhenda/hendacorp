@@ -1,3 +1,12 @@
+## [1.1.5-rc.1](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.1.4...browserslist-config-v1.1.5-rc.1) (2024-09-03)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-plugin-cypress to v3.5.0 ([bfa756e](https://github.com/akhenda/hendacorp/commit/bfa756e604a47f0e0a5cba9bbbcac4cb309a38bc))
+- **deps:** update dependency eslint-plugin-jest to v28.8.1 ([4f13562](https://github.com/akhenda/hendacorp/commit/4f13562576d85c90951659e4d55d0f3333dfd662))
+- **deps:** update dependency eslint-plugin-jest to v28.8.2 ([f8e8f19](https://github.com/akhenda/hendacorp/commit/f8e8f19b7f406eb4aba720c1dbf720e740015846))
+- **deps:** update dependency eslint-plugin-no-unsanitized to v4.1.0 ([d86e178](https://github.com/akhenda/hendacorp/commit/d86e178be0906146be0e5a786c025cd62e010fc3))
+
 ## [1.1.5-rc.1](https://github.com/akhenda/hendacorp/compare/browserslist-config-v1.1.4...browserslist-config-v1.1.5-rc.1) (2024-09-02)
 
 ### Bug Fixes
