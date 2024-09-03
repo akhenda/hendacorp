@@ -13,6 +13,6 @@
     "@hendacorp:registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@swc/helpers": "0.5.12"
+    "@swc/helpers": "0.5.13"
   }
 }
