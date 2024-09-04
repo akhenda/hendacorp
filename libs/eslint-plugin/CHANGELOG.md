@@ -1,3 +1,9 @@
+## [1.0.6-rc.6](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.6-rc.5...eslint-plugin-v1.0.6-rc.6) (2024-09-04)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-plugin-jsx-a11y to v6.10.0 ([5a81b64](https://github.com/akhenda/hendacorp/commit/5a81b64e3511a8eb70315fe58ad1375cf411e495))
+
 ## [1.0.6-rc.5](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.6-rc.4...eslint-plugin-v1.0.6-rc.5) (2024-09-02)
 
 ### Bug Fixes
