@@ -49,7 +49,7 @@
     "@nx/js": "19.6.5",
     "@nx/workspace": "19.6.5",
     "@swc/cli": "0.4.0",
-    "@swc/core": "1.7.23",
+    "@swc/core": "1.7.24",
     "@swc/jest": "0.2.36",
     "@theunderscorer/nx-semantic-release": "2.12.0",
     "@types/jest": "29.5.12",
