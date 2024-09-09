@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@9.10.0",
   "volta": {
     "node": "20.17.0",
-    "pnpm": "9.9.0"
+    "pnpm": "9.10.0"
   },
   "repository": {
     "type": "git",
@@ -44,10 +44,10 @@
     "@commitlint/config-conventional": "19.4.1",
     "@commitlint/config-nx-scopes": "19.3.1",
     "@hendacorp/eslint-plugin": "workspace:*",
-    "@nx/eslint-plugin": "19.6.5",
-    "@nx/jest": "19.6.5",
-    "@nx/js": "19.6.5",
-    "@nx/workspace": "19.6.5",
+    "@nx/eslint-plugin": "19.6.6",
+    "@nx/jest": "19.6.6",
+    "@nx/js": "19.6.6",
+    "@nx/workspace": "19.6.6",
     "@swc/cli": "0.4.0",
     "@swc/core": "1.7.24",
     "@swc/jest": "0.2.36",
@@ -60,13 +60,13 @@
     "jest": "29.7.0",
     "jest-environment-node": "29.7.0",
     "lint-staged": "15.2.10",
-    "nx": "19.6.5",
+    "nx": "19.6.6",
     "prettier": "3.3.3",
     "ts-jest": "29.2.5",
     "ts-node": "10.9.2",
-    "typescript": "5.5.4",
+    "typescript": "5.6.2",
     "verdaccio": "5.32.1",
-    "@nx/eslint": "19.6.5"
+    "@nx/eslint": "19.6.6"
   },
   "dependencies": {
     "@swc/helpers": "0.5.13",
