@@ -1,3 +1,9 @@
+## [1.0.6-rc.7](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.6-rc.6...eslint-plugin-v1.0.6-rc.7) (2024-09-12)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-plugin-react to v7.36.0 ([d1bbe2c](https://github.com/akhenda/hendacorp/commit/d1bbe2cef578eb9b12b746bec59fc8258ec4ebb9))
+
 ## [1.0.6-rc.6](https://github.com/akhenda/hendacorp/compare/eslint-plugin-v1.0.6-rc.5...eslint-plugin-v1.0.6-rc.6) (2024-09-04)
 
 ### Bug Fixes
