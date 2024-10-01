@@ -124,8 +124,8 @@ importers:
         specifier: 9.1.0
         version: 9.1.0(eslint@8.57.1)
       eslint-plugin-array-func:
-        specifier: 4.0.0
-        version: 4.0.0(eslint@8.57.1)
+        specifier: 5.0.2
+        version: 5.0.2(eslint@8.57.1)
       eslint-plugin-boundaries:
         specifier: 4.2.2
         version: 4.2.2(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1)
@@ -3063,11 +3063,11 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
 
-  eslint-plugin-array-func@4.0.0:
-    resolution: {integrity: sha512-p3NY2idNIvgmQLF2/62ZskYt8gOuUgQ51smRc3Lh7FtSozpNc2sg+lniz9VaCagLZHEZTl8qGJKqE7xy8O/D/g==}
+  eslint-plugin-array-func@5.0.2:
+    resolution: {integrity: sha512-iyLex2+pTcxHZ6OLL80oMy+CtffpJ9j6A/57VQi1VN5bK1IS/0o+mWvezDHeAlwXjn6ksRO9L5SGU329BBuY8A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
-      eslint: '>=8.40.0'
+      eslint: '>=8.51.0'
 
   eslint-plugin-boundaries@4.2.2:
     resolution: {integrity: sha512-cjwpZqkCXgfz953bc74uDetOtGVxwgMgNZ7hAKi6Oxck+x4oY6Z/9DzgPqAYhtQdSNHFVg+vhft/lSL+snPMQg==}
@@ -8119,21 +8119,6 @@ snapshots:
       - typescript
       - verdaccio
 
-  '@nrwl/js@19.8.2(@babel/traverse@7.25.3)(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.4.5)(verdaccio@5.32.2(typanion@3.14.0))':
-    dependencies:
-      '@nx/js': 19.8.2(@babel/traverse@7.25.3)(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.4.5)(verdaccio@5.32.2(typanion@3.14.0))
-    transitivePeerDependencies:
-      - '@babel/traverse'
-      - '@swc-node/register'
-      - '@swc/core'
-      - '@swc/wasm'
-      - '@types/node'
-      - debug
-      - nx
-      - supports-color
-      - typescript
-      - verdaccio
-
   '@nrwl/js@19.8.2(@babel/traverse@7.25.3)(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.6.2)(verdaccio@5.32.2(typanion@3.14.0))':
     dependencies:
       '@nx/js': 19.8.2(@babel/traverse@7.25.3)(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.6.2)(verdaccio@5.32.2(typanion@3.14.0))
@@ -8286,7 +8271,7 @@ snapshots:
       '@babel/preset-env': 7.25.3(@babel/core@7.25.2)
       '@babel/preset-typescript': 7.22.15(@babel/core@7.25.2)
       '@babel/runtime': 7.22.15
-      '@nrwl/js': 19.8.2(@babel/traverse@7.25.3)(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.4.5)(verdaccio@5.32.2(typanion@3.14.0))
+      '@nrwl/js': 19.8.2(@babel/traverse@7.25.3)(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.6.2)(verdaccio@5.32.2(typanion@3.14.0))
       '@nx/devkit': 19.8.2(nx@19.8.2(@swc/core@1.7.26(@swc/helpers@0.5.13)))
       '@nx/workspace': 19.8.2(@swc/core@1.7.26(@swc/helpers@0.5.13))
       babel-plugin-const-enum: 1.2.0(@babel/core@7.25.2)
@@ -10572,7 +10557,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-array-func@4.0.0(eslint@8.57.1):
+  eslint-plugin-array-func@5.0.2(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
 
