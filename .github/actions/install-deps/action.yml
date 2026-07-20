@@ -6,10 +6,10 @@ runs:
 
   steps:
     - name: 🏗 Install PNPM packager
-      uses: pnpm/action-setup@v2
+      uses: pnpm/action-setup@v2.4.1
 
     - name: 🏗 Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v4.4.0
       with:
         node-version-file: 'package.json'
         cache: 'pnpm'
